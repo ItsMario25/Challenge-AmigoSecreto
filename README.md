@@ -10,6 +10,8 @@ El programa permite:
 - Mostrar la lista actual de participantes.
 - Realizar el sorteo de manera aleatoria.
 - Mostrar el amigo secreto asignado.
+- Mostrar parejas de amigos secretos asignados (minimo 4 participantes).
+- Eliminar participantes o listado completo de participantes.
 
 ## 🚀 Cómo usar
 
