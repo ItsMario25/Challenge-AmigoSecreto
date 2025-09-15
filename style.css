@@ -4,6 +4,10 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
+    --color-button-clear: #ff4d4d;
+    --color-button-clear-hover: #e04444;
+    --color-button-delete: #ff4d4d;
+    --color-button-delete-hover: #e04444;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -88,8 +92,12 @@ body {
 }
 
 .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 300px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 /* Estilos de entrada de texto */
@@ -132,7 +140,10 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
 }
+
 
 .result-list {
     margin-top: 15px;
@@ -142,10 +153,11 @@ ul {
     text-align: center;
 }
 
-/* Botón de sortear título */
+
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
@@ -154,9 +166,34 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+
+.button-clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button-clear);
+    font-size: 16px;
+    min-height: 50px;
+}
+
+.button-clear img {
+    margin-right: 10px;
+    width: 20px;       
+    height: 20px;     
+    object-fit: contain; 
+}
+
+.button-clear:hover {
+    background-color: var(--color-button-clear-hover);
+}
+
