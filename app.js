@@ -40,3 +40,17 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>🎉 Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 }
+
+function eliminarTodo() {
+    if (amigos.length === 0) {
+        alert("La lista ya está vacía.");
+        return;
+    }
+    
+    if (confirm("¿Estás seguro de que quieres eliminar todos los amigos de la lista?")) {
+        amigos = [];
+        mostrarListaAmigos();
+        const resultado = document.getElementById("resultado");
+        resultado.innerHTML = "";
+    }
+}
