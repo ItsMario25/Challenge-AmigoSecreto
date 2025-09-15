@@ -24,6 +24,15 @@ function mostrarListaAmigos() {
     for (let i = 0; i < amigos.length; i++) {
         const li = document.createElement("li");
         li.textContent = amigos[i];
+
+        const botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        botonEliminar.classList.add("button-delete");
+        botonEliminar.onclick = function() {
+            eliminarAmigo(i);
+        };
+        
+        li.appendChild(botonEliminar);
         lista.appendChild(li);
     }
 }
@@ -40,6 +49,12 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>🎉 Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 }
+
+function eliminarAmigo(indice) {
+    amigos.splice(indice, 1);
+    mostrarListaAmigos();
+}
+
 
 function eliminarTodo() {
     if (amigos.length === 0) {
