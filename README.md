@@ -32,7 +32,7 @@ El programa permite:
 
 ## 🖼 Vista previa
 
-![Vista previa del proyecto](./preview.png)
+![Vista previa del proyecto](./presentacion.png)
 
 ## ✨ Autor
 Proyecto desarrollado como parte de un **challenge individual**.
